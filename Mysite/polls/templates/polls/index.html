@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    {# django模板语言只能在html中使用，不能再js、css等静态文件中使用 #}
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'polls/style.css' %}"> {# {% static %} 模板标签会生成静态文件的绝对路径。 #}
+</head>
+<body>
+    {% if latest_question_list %}
+    <ul>
+        {#前缀polls: 为URL的命名空间，其中question.id是传递的URL参数 #}
+        {% for question in latest_question_list %}
+            <li><a href="{% url 'polls:detail' question.id %}">{{question.question_text}}</a></li>
+        {% endfor %}
+    </ul>
+    {% else %}
+        <p>No polls are available.</p>
+    {% endif %}
+</body>
+</html>
