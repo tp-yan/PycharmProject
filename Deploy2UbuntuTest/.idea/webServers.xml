@@ -2,8 +2,8 @@
 <project version="4">
   <component name="WebServers">
     <option name="servers">
-      <webServer id="43c1e9c2-6d0a-44a3-8b12-185e0116965c" name="Deploy2Ubuntu">
-        <fileTransfer port="22" accessType="SFTP">
+      <webServer id="43c1e9c2-6d0a-44a3-8b12-185e0116965c" name="Deploy2Ubuntu" url="http://10.10.81.140">
+        <fileTransfer host="10.10.81.140" port="22" rootFolder="/home/tp" accessType="SFTP">
           <advancedOptions>
             <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
           </advancedOptions>

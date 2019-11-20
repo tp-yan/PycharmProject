@@ -1,14 +1,36 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="PublishConfigData" serverName="image_ubuntu16">
+  <component name="PublishConfigData" autoUpload="Always" serverName="Test">
     <serverData>
-      <paths name="image_ubuntu16">
+      <paths name="Deploy2Ubuntu">
         <serverdata>
           <mappings>
-            <mapping deploy="/pycharm_projects" local="$PROJECT_DIR$" web="/" />
+            <mapping deploy="/pycharm_projects/Deploy2UbuntuTest" local="$PROJECT_DIR$" web="/" />
+          </mappings>
+        </serverdata>
+      </paths>
+      <paths name="Test">
+        <serverdata>
+          <mappings>
+            <mapping deploy="/pycharm_projects/Deploy2UbuntuTest" local="$PROJECT_DIR$" />
+          </mappings>
+        </serverdata>
+      </paths>
+      <paths name="tp@10.10.81.140:22">
+        <serverdata>
+          <mappings>
+            <mapping deploy="/home/tp/pycharm_projects/Deploy2UbuntuTest" local="$PROJECT_DIR$" />
+          </mappings>
+        </serverdata>
+      </paths>
+      <paths name="tp@10.10.81.140:22 (1)">
+        <serverdata>
+          <mappings>
+            <mapping deploy="/home/tp/pycharm_projects/Deploy2UbuntuTest" local="$PROJECT_DIR$" />
           </mappings>
         </serverdata>
       </paths>
     </serverData>
+    <option name="myAutoUpload" value="ALWAYS" />
   </component>
 </project>

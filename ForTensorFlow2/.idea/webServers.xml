@@ -2,7 +2,7 @@
 <project version="4">
   <component name="WebServers">
     <option name="servers">
-      <webServer id="31571c38-f79d-4d2b-8f91-c988b8f18be6" name="ForTensorFlow2" url="http://10.10.81.140">
+      <webServer id="27317b9a-fd38-48a9-9c77-7b2c101f06ee" name="ForTensorFlow2" url="http://10.10.81.140">
         <fileTransfer host="10.10.81.140" port="22" rootFolder="/home/tp" accessType="SFTP">
           <advancedOptions>
             <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
