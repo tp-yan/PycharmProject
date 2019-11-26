@@ -57,15 +57,17 @@ print(meshgridByNumpy())
 
 
 def meshgridByTF():
-    y = tf.linspace(-2., 2, 5)
+    print("================================")
+    y = tf.linspace(-2., 2, 5) # 5,
     print(y)
-    x = tf.linspace(1., 5, 5)
+    x = tf.linspace(1., 5, 10) # 10,
     print(x)
-    points_x, points_y = tf.meshgrid(x, y)
-    print(points_x.shape)  # (5, 5)
-    print(points_y.shape)  # (5, 5)
+    points_x, points_y = tf.meshgrid(x, y) # （y.shape,x.shape）
+    print(points_x.shape)  # (5, 10)
+    print(points_y.shape)  # (5, 10)
     print(points_x)
     print(points_y)
+    print("================================")
 
     points = tf.stack([points_x, points_y], axis=2)  # 插入一个新维度，2个[5,5]并行化为[5,5,2] ([0,0],[0,0]) ==> ([0,0,0],[0,0,1])
 
@@ -93,7 +95,7 @@ def draw_contour():
     y = tf.linspace(0., 2 * 3.14, 500)
     point_x, point_y = tf.meshgrid(x, y)
     points = tf.stack([point_x, point_y], axis=2)
-    print("points:", points.shape)
+    print("points:", points)
     z = func(points)
     print("z:", z.shape)
 
